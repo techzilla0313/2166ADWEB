@@ -1,0 +1,78 @@
+<head>
+    <link rel="stylesheet" href="about.component.css">
+</head>
+
+ <header class="bg-dark py-5 bg-image1">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <div class="my-5 text-center text-xl-start">
+                    <h1 class="display-5 fw-bolder text-black mb-2">About Us!</h1>
+                    <p class="lead fw-normal text-black-75 mb-4">Let us take a look on world of MMORPG</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="join">Become a Sponsor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </header>
+  <section>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <br> <br>
+                <h2 class="text-black mt-0">What is Classic MMORPG Games?</h2>
+                <hr class="divider divider-light" />
+                <p class="text-black-75 mb-4">Classic MMORPG (Massively Multiplayer Online Role-Playing Game) is a type of online </p>
+                <p> video game where a lot of players play together in a big virtual world. In these games, </p>
+                <p> you create a character, go on adventures, and team up with others. You can fight  </p>
+                <p> computer-controlled enemies, complete quests, and get better gear for your   </p>
+                <p> character. The game world keeps going even when you're not playing, and you can  </p>
+                <p> trade items and interact with other players.  </p>
+                <hr class="divider divider-light" />
+                <p class="text-black-75 mb-4">We are here to hold a conference abot Classic MMORPG Gaems  </p>
+                <p> and let the players of these games meet each other and interact with each other. </p>
+                <p> We have various activities like Boss Time Attack, Tyranny Wars, Club Wars, Castle Siege,   </p>
+                <p> and many more PVP and PVE gameplay in different classic MMORPG Games.   </p>
+                <p> Come and join us to explore this magical online world.  </p>
+                <hr class="divider divider-light" />
+                <div class="game-container">
+                    <button (click)="toggleGames()">Games</button>
+                    <div *ngIf="showGames" class="game-buttons">
+                        <button (click)="toggleContent('ran')">Ran Online</button>
+                        <button (click)="toggleContent('ragnarok')">Ragnarok Online</button>
+                        <button (click)="toggleContent('dn')">Dragon Nest</button>
+                    </div>
+                  
+                    <div *ngIf="showRan" class="tournament-container">
+                      <p class="tournament">8v8 Tournament</p>
+                      <p class="tournament">4v4 Tournament</p>
+                      <p class="tournament">Club Wars</p>
+                      <p class="tournament">Tyranny Wars</p>
+                      <p class="tournament">School Wars</p>
+                    </div>
+                  
+                    <div *ngIf="showRagnarok" class="tournament-container">
+                      <p class="tournament">3v3 Asura Champion PVP</p>
+                      <p class="tournament">5v5 Tournament</p>
+                      <p class="tournament">Castle Siege</p>
+                      <p class="tournament">Sun Vs Moon</p>
+                      <p class="tournament">Boss Time Attack</p>
+                    </div>
+                  
+                    <div *ngIf="showDN" class="tournament-container">
+                      <p class="tournament">Dragon Nest Timed Attack</p>
+                      <p class="tournament">4v4 Tournament</p>
+                      <p class="tournament">Occupational Wars</p>
+                      <p class="tournament">Guild Wars</p>
+                      <p class="tournament">Territory Wars</p>
+                    </div>
+
+                    <br><br><br><br><br>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>

@@ -1,0 +1,36 @@
+
+    .bg-image1 {
+        height: 500px;
+        background: url('https://w0.peakpx.com/wallpaper/765/182/HD-wallpaper-video-game-dragon-nest.jpg') center center/cover no-repeat;
+    }
+
+    .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .game-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    }
+
+    button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    }
+
+    .tournament-container {
+    margin-top: 10px;
+    text-align: center;
+    }
+
+    .tournament {
+    margin: 5px;
+    }

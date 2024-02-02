@@ -1,0 +1,9 @@
+.bg-image {
+    height: 500px;
+    background: url('https://mmos.com/wp-content/uploads/2021/05/ragnarok-project-s-novices-banner.jpg') center center/cover no-repeat;
+}
+
+.card-img-top {
+height: 500px; 
+object-fit: cover;
+}
