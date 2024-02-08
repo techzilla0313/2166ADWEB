@@ -1,0 +1,81 @@
+
+<body>
+  <div class="text"> 
+    <p>Today's date : {{presentDate}}</p>
+    <p>Short Date : {{ presentDate | date : 'shortDate' }}</p> 
+    <p>Medium Date : {{ presentDate | date : 'mediumDate' }}</p> 
+    <p>Long Date : {{ presentDate | date : 'longDate' }}</p> 
+  </div>
+
+  <hr/>
+  <div class="params">
+    <h2>Date with Parameters</h2>
+    <p>Formatted Date : {{ presentDate | date : 'M/dd/yyyy' }}</p> 
+    <p>Hours and Minutes : {{ presentDate | date : 'h:mm' }}</p> 
+  </div>
+
+  <hr/>
+  <div class="format">
+    <h2>Text Format Pipes</h2>
+    <div>
+      <p>Date with uppercase :- {{ presentDate | date : 'fullDate' | uppercase }}</p>
+      <p>Date with lowercase :- {{ presentDate | date : 'medium' | lowercase }}</p>
+    </div>
+  </div>
+  
+  <hr/>
+  <h1>Built-in Pipes Demo</h1>
+
+  <hr/>
+  <div class="async">
+    <h2> Async Pipes </h2>
+    <p> Seconds changing in Time : {{ time$ | async | date: 'mediumTime' }}
+    </p>
+  </div>
+
+  <hr/>
+  <div class="currency">
+    <h2>Currency Pipes</h2>
+    <p>{{ price | currency:'':true}}</p>
+    <p>{{ price | currency:'INR' }}</p>
+  </div>
+
+  <hr/>
+  <div class="slice">
+    <h2>Slice Pipes</h2>
+    <h3>Start index :- {{Fruits | slice:2}}</h3>
+    <h4>Start and end index :- {{Fruits | slice:1:4}}</h4>
+    <h5>Negative index :- {{Fruits | slice:-2}}</h5>
+    <h6>Negative start and end index :- {{Fruits | slice:-4:-2}}</h6>
+  </div>
+
+  <hr/>
+  <div class="decimal">
+    <h2>Decimal Pipes</h2>
+    <p>{{decimalNum1 | number}}</p>
+    <p>{{decimalNum2 | number}}</p>
+
+    <p>Apply formatting:- {{decimalNum1 | number:'3.1'}}</p>
+    <p>Apply formatting:- {{decimalNum2 | number:'2.1-4'}}</p>
+  </div>
+
+  <hr/>
+  <div class="json">
+    <h2>JSON Pipes</h2>
+    <p>Without JSON pipe:</p>
+    <pre>{{ object }}</pre>
+    <p>With JSON pipe:</p>
+    <pre>{{ object | json }}</pre>
+  </div>
+
+  <hr/>
+  <div class="percent">
+    <h2>Percent Pipes</h2>
+    <p>A: {{ a | percent }}</p>
+
+    <p>B: {{ b | percent: '4.3-5' }}</p>
+
+    <p>C: {{ c | percent: '4.3-5' }}</p>
+  </div>
+
+</body>

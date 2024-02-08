@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+  }
+  
+  /* Container styling for each section */
+  .text,
+  .params,
+  .format,
+  .async,
+  .currency,
+  .slice,
+  .decimal,
+  .json,
+  .percent {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  /* Header styling */
+  h2 {
+    color: #333;
+    margin-top: 0;
+  }
+  
+  /* Card styling */
+  .text p,
+  .params p,
+  .format p,
+  .async p,
+  .currency p,
+  .slice h3,
+  .slice h4,
+  .slice h5,
+  .slice h6,
+  .decimal p,
+  .json p,
+  .percent p {
+    margin: 10px 50px;
+  }
+  
+  /* Styling for hr */
+  hr {
+    border: 1px solid #ddd;
+    margin: 50px 0;
+  }
+  
+  /* Styling for pre tags (JSON representation) */
+  .json pre {
+    margin: 10px 0;
+    white-space: pre-wrap;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media screen and (max-width: 600px) {
+    .text,
+    .params,
+    .format,
+    .async,
+    .currency,
+    .slice,
+    .decimal,
+    .json,
+    .percent {
+      width: 100%;
+    }
+  }
