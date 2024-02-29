@@ -1,0 +1,28 @@
+table {
+    width: 80%; /* Adjust the width as needed */
+    border-collapse: collapse;
+    margin: 20px auto; /* Add margin and center the table horizontally */
+}
+
+/* Style the table header */
+thead th {
+    background-color: #ebcf92;
+    padding: 1rem;
+}
+
+/* Style the table cells */
+td, th {
+    border: 1px solid #aa9898;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Style alternating rows */
+tbody tr:nth-child(even) {
+    background-color: #d8c6c6;
+}
+
+p {
+    text-align: center;
+    font-size: 2rem;
+}
