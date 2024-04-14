@@ -1,0 +1,61 @@
+.books-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.books-container p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.books-container input {
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.books-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.books-container button:hover {
+  background-color: #0056b3;
+}
+
+.books-container h3 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.books-container h3 b {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.books-container h3 button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.books-container h3 button:hover {
+  background-color: #bd2130;
+}
